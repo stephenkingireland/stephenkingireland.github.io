@@ -20,12 +20,40 @@ function tableCreate(el, data)
 
 $(document).ready( function () {
 
+    var boulderProblems = [];
+
+    $.each(climbData,function(i, cragData){
+
+
+        $.each(cragData.climbs,function(i, climbData){
+            var climb = {};
+
+            climb.cragName = cragData.name;
+
+            climb.climbName = climbData.name;
+            climb.grade = climbData.grade;
+            climb.sector = climbData.sector;
+
+            if(climbData.type === "Boulder")
+                boulderProblems.push(climb);
+
+        });
+
+    } 
+    );
+
+    boulderProblems;
+
+
 
     $('#boulderTable').DataTable( {
-        data: climbData,
+        data: boulderProblems,
         columns: [
-            { data: 'name' },
-            { data: 'url' }
+            { data: 'cragName' },
+            { data: 'sector' },
+            { data: 'climbName' },
+            { data: 'grade' }
+
         ]
     } );
 
