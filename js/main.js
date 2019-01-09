@@ -34,13 +34,10 @@ $(document).ready( function () {
             climb.grade = climbData.grade;
             climb.sector = climbData.sector;
 
-            if(climbData.type === "Boulder"){
-             if(climbData.cragName === "Awesome Walls Dublin"){
-                }
-                else{
+            if(climbData.type === "Boulder")
+             if(climbData.cragName !== "Awesome Walls Dublin")
                 boulderProblems.push(climb);
-                }
-            }
+
         });
 
     } 
