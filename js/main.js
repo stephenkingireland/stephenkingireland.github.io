@@ -21,7 +21,13 @@ function tableCreate(el, data)
 $(document).ready( function () {
 
 
+    $('#boulderTable').DataTable( {
+        data: data,
+        columns: [
+            { data: 'name' },
+            { data: 'url' }
+        ]
+    } );
 
 
-    $('#boulderTable').DataTable();
 } );
