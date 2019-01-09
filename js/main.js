@@ -22,7 +22,7 @@ $(document).ready( function () {
 
 
     $('#boulderTable').DataTable( {
-        data: data,
+        data: climbData,
         columns: [
             { data: 'name' },
             { data: 'url' }
