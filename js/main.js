@@ -34,7 +34,7 @@ $(document).ready( function () {
             climb.grade = climbData.grade;
             climb.sector = climbData.sector;
 
-            if(climbData.type === "Boulder" || climbData.cragName !== "Awesome Walls Dublin")
+            if(climbData.type === "Boulder" && climbData.cragName !== "Awesome Walls Dublin")
                 boulderProblems.push(climb);
 
         });
