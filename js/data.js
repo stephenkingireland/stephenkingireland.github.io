@@ -1,4 +1,4 @@
-var data = '[
+var data = 
     {
       "name": "Glendalough",
       "url": "glendalough",
@@ -32910,5 +32910,4 @@ var data = '[
           "sector": "Waterfoot Wall"
         }
       ]
-    }
-  ]'
+    };
