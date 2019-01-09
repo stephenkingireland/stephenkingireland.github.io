@@ -1,5 +1,5 @@
 var climbData = 
-    {
+    [{
       "name": "Glendalough",
       "url": "glendalough",
       "climbs": [
@@ -32910,4 +32910,4 @@ var climbData =
           "sector": "Waterfoot Wall"
         }
       ]
-    };
+    }];
