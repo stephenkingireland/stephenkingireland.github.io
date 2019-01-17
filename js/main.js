@@ -64,4 +64,7 @@ $(document).ready( function () {
     } );
 
 
+    var ctx = document.getElementById("climbChart");
+
+
 } );
