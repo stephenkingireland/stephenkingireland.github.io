@@ -53,7 +53,7 @@ $(document).ready( function () {
 
 
     $('#boulderTable').DataTable( {
-        data: boulderProblems,
+        data: climbData,
         columns: [
             { data: 'cragName' },
             { data: 'sector' },
