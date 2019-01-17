@@ -15,19 +15,15 @@ function tableCreate(el, data)
 }
 
 
-
-
-
-$(document).ready( function () {
-
+function extractBoulderingFromIrelandData(rawData)
+{
+    
     var boulderProblems = [];
 
-    $.each(climbData,function(i, cragData){
-
+    $.each(rawData,function(i, cragData){
 
         $.each(cragData.climbs,function(i, climbData){
             var climb = {};
-
             climb.cragName = cragData.name;
 
             climb.climbName = climbData.name;
@@ -44,8 +40,16 @@ $(document).ready( function () {
     } 
     );
 
-    boulderProblems;
 
+    return boulderProblems;
+
+}
+
+
+
+
+
+$(document).ready( function () {
 
 
     $('#boulderTable').DataTable( {
