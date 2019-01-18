@@ -51,9 +51,9 @@ function extractBoulderingFromIrelandData(rawData)
 
 $(document).ready( function () {
 
-
+var data = climbData;
     $('#boulderTable').DataTable( {
-        data: extractBoulderingFromIrelandData(climbData),
+        data: data,
         columns: [
             { data: 'cragName' },
             { data: 'sector' },
