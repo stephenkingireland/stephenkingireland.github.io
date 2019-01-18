@@ -53,7 +53,7 @@ $(document).ready( function () {
 
 
     $('#boulderTable').DataTable( {
-        data: climbData,
+        data: extractBoulderingFromIrelandData(climbData),
         columns: [
             { data: 'cragName' },
             { data: 'sector' },
